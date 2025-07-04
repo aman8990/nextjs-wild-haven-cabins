@@ -28,7 +28,7 @@ function AuthForm() {
   }, [variant]);
 
   const socialAction = async (action) => {
-    const redirectUrl = `${window.location.origin}/auth/callback`;
+    const redirectUrl = `${process.env.PROJECT_URL}/auth/callback`;
     const result = await oAuth(action, redirectUrl);
     console.log(result);
 
