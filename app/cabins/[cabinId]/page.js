@@ -6,6 +6,10 @@ import Spinner from '@/app/_components/Spinner';
 import { getSettings } from '@/app/_actions/settings';
 import { getBookedDatesByCabinId } from '@/app/_actions/getBookingDatesByCabinId';
 
+export const metadata = {
+  title: 'Cabin',
+};
+
 export async function generateStaticParams() {
   const cabins = await getCabins();
   const ids = cabins.map((cabin) => ({ cabinId: String(cabin.id) }));
