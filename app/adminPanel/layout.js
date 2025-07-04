@@ -3,6 +3,10 @@ import { getAdmin } from '../_actions/admin';
 import AdminSidebar from '../_components/AdminSidebar';
 import { getSession } from '../_hooks/useSession';
 
+export const metadata = {
+  title: 'Admin Panel',
+};
+
 async function AdminLayout({ children }) {
   const { user } = await getSession();
   const emailId = user?.email;

@@ -8,6 +8,10 @@ import { useForm } from 'react-hook-form';
 import dynamic from 'next/dynamic';
 import Spinner from '../_components/Spinner';
 
+export const metadata = {
+  title: 'Reset Password',
+};
+
 function ResetPasswordPage() {
   const [token, setToken] = useState(null);
   const router = useRouter();
