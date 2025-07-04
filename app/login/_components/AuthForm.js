@@ -28,9 +28,9 @@ function AuthForm() {
   }, [variant]);
 
   const socialAction = async (action) => {
-    const redirectUrl = `${process.env.PROJECT_URL}/auth/callback`;
+    const baseUrl = process.env.PROJECT_URL || window.location.origin;
+    const redirectUrl = `${baseUrl}/auth/callback`;
     const result = await oAuth(action, redirectUrl);
-    console.log(result);
 
     if (result?.error) {
       toast.dismiss();
