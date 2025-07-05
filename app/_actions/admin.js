@@ -260,7 +260,8 @@ export async function getBooking(id) {
   return { success: true, booking: data[0] };
 }
 
-export async function updateBooking(id, newStatus) {
+export async function updateBooking(id, updatedData) {
+  console.log(updatedData);
   const { user } = await getSession();
   const emailId = user?.email;
   const isAdmin = await getAdmin(emailId);
@@ -269,7 +270,7 @@ export async function updateBooking(id, newStatus) {
 
   const { error } = await supabase
     .from('bookings')
-    .update({ status: newStatus })
+    .update(updatedData)
     .eq('id', id);
 
   if (error) return { error: 'Error in updating booking' };
