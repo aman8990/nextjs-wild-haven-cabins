@@ -18,7 +18,7 @@ A modern full-stack cabin booking application built with **Next.js 15**, designe
 - 🎨 Responsive design with Tailwind CSS
 - 🌍 Supabase backend integration
 - 🧠 Global state management using Zustand
-- 🧑‍💼 Admin Panel for managing bookings, check-ins, check-outs, and more
+- 🧑‍💼 **Admin Panel** for managing bookings, check-ins, check-outs, and more
 
 ---
 
@@ -49,4 +49,37 @@ A modern full-stack cabin booking application built with **Next.js 15**, designe
 - **Tailwind Scrollbar** – Custom scrollbars
 
 ---
+
+## 📂 Project Structure
+
+```bash
+project/
+  ├── middleware.js          # Middleware for route protection (auth guard)
+
+  app/
+    ├── api/                 # API endpoints (checkout, paymentInfo, webhook etc.)
+    ├── _actions/            # Next.js Server Actions (admin, cabin, bookings etc.)
+    ├── _context/            # React Contexts (Toast context)
+    ├── _components/         # Reusable UI components (buttons, input, header, sidebar etc.)
+    ├── _hooks/              # Custom hooks (useSession, useDataRange etc.)
+    ├── _libs/               # Core libraries (middleware, adminClient, getChartData etc.)
+    ├── account/             # User account info and settings
+    ├── login/               # Login page
+    ├── contactUs/           # Contact Us page
+    ├── about/               # About page
+    ├── cabins/              # Cabins listing route          
+    │   └── [cabinId]/       # Dynamic cabin page
+    ├── adminPanel/          
+    │   └── dashboard/       # Admin panel dashboard
+    │   └── bookings/        # All new bookings
+    │   └── searchBooking/   # Search booking
+    │   ||                   # More routes
+    ├── layout.js            # Root layout for the app
+    ├── globals.css          # Global Tailwind styles
+    ├── page.js              # App Homepage
+    └── not-found.js         # Custom 404 error page
+```
+
+---
+
 
