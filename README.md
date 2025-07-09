@@ -114,7 +114,7 @@ STRIPE_WEBHOOK_SECRET=your_stripe_webhook_key
 
 ```
 
-## 5. Start Development Server
+## 4. Start Development Server
 
 ```bash
 npm run dev
