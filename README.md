@@ -82,4 +82,49 @@ project/
 
 ---
 
+# 🧪 Getting Started
+
+Follow these steps to set up the project locally.
+
+## 1. Clone the Repository
+
+```bash
+git clone https://github.com/aman8990/nextjs-wild-haven-cabins.git
+cd nextjs-wild-haven-cabins
+```
+
+## 2. Install Dependencies
+
+```bash
+npm install
+```
+
+## 3. Set Up Environment Variables
+
+```bash
+PROJECT_URL=your_project_url
+
+NEXT_PUBLIC_SUPABASE_URL=your_supabase_url
+NEXT_PUBLIC_SUPABASE_ANON_KEY=your_supabase_anon_key
+NEXT_PUBLIC_SUPABASE_SERVICE_ROLE=your_supabase_service_role_key
+
+STRIPE_SECRET_KEY=your_stripe_secret_key
+STRIPE_PUBLISHABLE_KEY=your_stripe_publishable_key
+STRIPE_WEBHOOK_SECRET=your_stripe_webhook_key
+
+```
+
+## 5. Start Development Server
+
+```bash
+npm run dev
+```
+
+---
+
+## 📬 Contact
+
+Created by [Aman Kumar](https://github.com/aman8990)  
+📧 Email: [amandalal899@gmail.com](mailto:amandalal899@gmail.com)
+
 
